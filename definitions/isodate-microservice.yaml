@@ -1,4 +1,4 @@
-apiVersion: extensions/v1beta1
+apiVersion: v1
 kind: Deployment
 metadata:
   name: isodate-service
@@ -11,6 +11,6 @@ spec:
     spec:
       containers:
       - name: isodate-service
-        image: duyushui/iso-date-service:latest
+        image: duyushui/isodate-service:latest
         ports:
         - containerPort: 3000
